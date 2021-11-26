@@ -1,0 +1,35 @@
+
+<div class="conatiner">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 mt-5">
+            
+            <form>
+                <h3 style="font-weight:bold;text-align:center">Registration</h3>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" [(ngModel)]="uname">
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email">
+                </div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Passwprd</label>
+                    <input type="password" class="form-control" id="pwd" [(ngModel)]="pwd" name="pwd">
+                  </div>
+                  <div class="mb-3">
+                    <label for="place" class="form-label">Place</label>
+                    <input type="text" class="form-control" id="place" [(ngModel)]="place" name="place">
+                  </div>
+               <div style="margin-left: 23%;">
+                <button (click)="registration()" class="btn btn-primary">Register</button>
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                <button type="submit" class="btn btn-primary">Clear</button>
+                </div>
+              </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="conatiner">
+    <div class="row">
+       <div class="col-4"></div>
+       <div class="col-4 mt-5">
+           <form >
+               <h3 style="font-weight:bold;text-align:center ; margin-bottom: 40px;">
+Add product
+               </h3>
+        <input type="text" placeholder=" Product Name" class="form-control"  name="name" [(ngModel)]="name" >
+        <br> <input type="text" placeholder="Price " class="form-control" name="price"  [(ngModel)]="price">
+       <br>  
+       <input type="number" placeholder="Quantity" class="form-control"  name="qnt" [(ngModel)]="quantity" >
+<br>
+<input type="text" placeholder="Category " class="form-control" name="cat" [(ngModel)]="category" >
+<button (click)="addproduct()" class="btn btn-primary mt-5" style="margin-left: 30%;">Submit</button>
+&nbsp;
+&nbsp;&nbsp;
+<a routerLink="/viewproducts">  <button type="submit" class="btn btn-primary mt-5" >
+    Back</button></a>
+       </form>
+       </div>
+       <div class="col-4"></div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 mt-5">
+            <h3 style="font-weight:bold;text-align:center">Product List</h3>
+            
+            <table class="table table-light mt-3 table-bordered"><thead class="thead-light">
+                <tr><th>Sl.No</th><th> Name</th><th>Price</th><Th>Quantity</Th><th>Category</th></tr>
+              </thead><tbody>
+            <tr *ngFor="let item of products ,  index as i">
+              <td>{{i+1}} &nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td >{{item.Name}} &nbsp;&nbsp;&nbsp;&nbsp;</td>
+             <td>   {{item.Price}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+             <td >   {{item.Quantity}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+             <td >   {{item.Category}}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr></tbody></table>
+
+
+          <a routerLink="/addproducts">  <button type="submit" class="btn btn-primary mt-5" style="margin-left: 40%;">
+            Add Product</button></a>
+            
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
